@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İyi Ki Doğdun! 🎂</title>
+    <style>
+        :root {
+            --spotify-green: #1DB954;
+            --bg-dark: #121212;
+            --text-white: #FFFFFF;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 3rem;
+            border-radius: 24px;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            z-index: 10;
+            max-width: 400px;
+            width: 85%;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #1DB954, #1ed760);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #b3b3b3;
+            margin-bottom: 2.5rem;
+        }
+
+        .spotify-btn {
+            background-color: var(--spotify-green);
+            color: black;
+            text-decoration: none;
+            padding: 16px 32px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .spotify-btn:hover {
+            transform: scale(1.05);
+            background-color: #1ed760;
+            box-shadow: 0 0 25px rgba(29, 185, 84, 0.5);
+        }
+
+        /* Küçük bir parıltı efekti ekledim, istersen silebilirsin */
+        .container::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, transparent, rgba(29, 185, 84, 0.2), transparent);
+            z-index: -1;
+            border-radius: 26px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>İyi ki Doğdun! 🎉</h1>
+        <p>Senin için hazırladım bu listeyi, özel liste işteeee açıklamama gerek bile yok biz birbirimizi çoktandır tanıyoruzz değil mi? İlk açıklamayı oku lütfenn.</p>
+        
+        <a href="https://open.spotify.com/playlist/3bE6Id0t9hzDxF58xtJiX1?si=02129d37201d4d69&pt=45c5f63ea5f4a80af5b3e7cd5fb35c58" target="_blank" class="spotify-btn">
+            <span>🎵 Listeye Gitmez misin??</span>
+        </a>
+    </div>
+
+</body>
+</html>
